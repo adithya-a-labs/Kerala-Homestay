@@ -1,0 +1,302 @@
+==================================================
+SMOOTHNESS & MOTION DESIGN UPDATE
+==================================================
+
+VERY IMPORTANT:
+The website must feel extremely smooth, fluid, immersive, and organic.
+
+The experience should feel:
+- elegant
+- cinematic
+- flowing
+- soft
+- premium
+- calming
+- alive
+- modern
+- tactile
+
+The scrolling experience should feel:
+like floating through a tropical Kerala retreat.
+
+NOT:
+- rigid
+- static
+- abrupt
+- mechanical
+- boxy
+
+==================================================
+OVERALL MOTION PHILOSOPHY
+==================================================
+
+Animations should feel:
+- natural
+- breathable
+- gentle
+- organic
+- luxurious
+- emotionally immersive
+
+The website should feel:
+alive with motion.
+
+Every interaction should feel:
+intentional and smooth.
+
+Think:
+Apple-level smoothness +
+boutique hospitality elegance +
+tropical calmness.
+
+==================================================
+SCROLL EXPERIENCE
+==================================================
+
+Implement:
+- buttery smooth scrolling
+- inertia scrolling
+- smooth section transitions
+- floating layered motion
+- organic reveal animations
+
+Use:
+Lenis smooth scrolling
+OR
+GSAP ScrollSmoother
+OR
+Framer Motion smooth scroll techniques.
+
+The page should glide smoothly.
+
+==================================================
+SECTION TRANSITIONS
+==================================================
+
+Sections should NOT abruptly appear.
+
+Each section should:
+- softly fade in
+- slide subtly upward
+- reveal gradually
+- feel layered and immersive
+
+Use:
+- staggered animation timing
+- opacity transitions
+- smooth transforms
+- depth-based movement
+
+==================================================
+IMAGE ANIMATIONS
+==================================================
+
+Images should feel cinematic and alive.
+
+Use:
+- slow hover zoom
+- parallax image movement
+- soft scale transitions
+- layered image depth
+- floating tropical movement
+
+Gallery images should:
+- slightly elevate on hover
+- zoom smoothly
+- animate with soft easing
+
+Avoid:
+- harsh scaling
+- aggressive motion
+- fast transitions
+
+==================================================
+TROPICAL FLOATING ELEMENTS
+==================================================
+
+Add subtle animated:
+- palm leaves
+- tropical foliage
+- Kerala doodles
+- floating decorative elements
+
+Motion should feel:
+wind-like and natural.
+
+Very subtle.
+
+==================================================
+CURVES & FLOW
+==================================================
+
+The entire layout should feel fluid.
+
+Add:
+- soft curved section separators
+- organic flowing edges
+- layered backgrounds
+- wave-like transitions
+- non-rigid spacing
+
+Avoid:
+- harsh straight section cuts
+- overly boxed layouts
+
+==================================================
+BUTTON INTERACTIONS
+==================================================
+
+Buttons should feel luxurious and tactile.
+
+Use:
+- smooth hover glow
+- soft scaling
+- subtle elevation
+- magnetic hover effect
+- fluid easing transitions
+
+Buttons should feel:
+soft and satisfying.
+
+==================================================
+CARD INTERACTIONS
+==================================================
+
+Cards should:
+- slightly float on hover
+- have smooth shadow transitions
+- subtly move upward
+- animate softly
+
+Avoid:
+- hard hover effects
+- sharp shadows
+- aggressive transforms
+
+==================================================
+TEXT ANIMATIONS
+==================================================
+
+Headings should animate elegantly.
+
+Use:
+- word-by-word fade reveals
+- soft upward motion
+- staggered timing
+- cinematic typography entrances
+
+Subheadings and paragraphs:
+- should fade naturally into view
+- feel calm and breathable
+
+==================================================
+HERO SECTION MOTION
+==================================================
+
+The hero section should feel magical.
+
+Include:
+- slow parallax movement
+- floating leaves
+- gentle ambient motion
+- cinematic image movement
+- smooth text reveals
+
+The hero should feel:
+alive and immersive.
+
+==================================================
+GALLERY EXPERIENCE
+==================================================
+
+The gallery should feel:
+editorial and cinematic.
+
+Use:
+- masonry grid animation
+- smooth hover zooms
+- immersive modal transitions
+- fluid image loading
+- soft staggered reveals
+
+Opening gallery images should feel:
+premium and elegant.
+
+==================================================
+LOADING EXPERIENCE
+==================================================
+
+Add:
+- elegant loading transitions
+- soft image fade loading
+- skeleton shimmer placeholders
+- progressive image reveal
+
+Avoid:
+- sudden image popping
+- janky loading behavior
+
+==================================================
+MOBILE EXPERIENCE
+==================================================
+
+The mobile experience should feel:
+extremely polished and fluid.
+
+Ensure:
+- smooth touch scrolling
+- elegant mobile transitions
+- responsive animations
+- lightweight motion performance
+
+Animations should remain:
+smooth even on mobile devices.
+
+==================================================
+MICRO INTERACTIONS
+==================================================
+
+Add subtle delightful interactions:
+- icon movement
+- cursor hover transitions
+- soft underline animations
+- floating decorative movement
+- smooth navbar behavior
+- animated active states
+
+Everything should feel:
+alive and premium.
+
+==================================================
+ANIMATION EASING
+==================================================
+
+Use:
+- smooth easing curves
+- cubic-bezier luxury easing
+- slow natural timing
+
+Avoid:
+- linear animations
+- robotic movement
+- fast harsh transitions
+
+==================================================
+OVERALL EXPERIENCE GOAL
+==================================================
+
+The final website should feel:
+- immersive
+- cinematic
+- fluid
+- peaceful
+- tropical
+- artistic
+- modern
+- emotionally rich
+
+Users should feel:
+like they are slowly exploring a peaceful Kerala retreat through motion and atmosphere.
+
+The website should feel:
+alive, flowing, smooth, and emotionally immersive.

@@ -1,67 +1,156 @@
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { PalmTreeIcon, KathakaliIcon } from "@/components/ui/icons";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { PalmTreeIcon, KathakaliIcon, LeafIcon } from "@/components/ui/icons";
 import heroImage from "@assets/829763380_1779350392783.jpg";
 
-export function Hero() {
+const EASE = [0.25, 0.46, 0.45, 0.94];
+
+function AnimatedWord({ word, delay }: { word: string; delay: number }) {
   return (
-    <section className="relative min-h-[100dvh] pt-20 flex flex-col md:flex-row items-center overflow-hidden bg-gradient-to-b from-background to-secondary/30 rounded-b-[3rem] md:rounded-b-[5rem]">
-      {/* Decorative SVGs */}
-      <motion.div 
-        animate={{ y: [0, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-        className="absolute top-32 left-10 text-primary/20"
+    <motion.span
+      className="inline-block"
+      initial={{ opacity: 0, y: 32, filter: "blur(4px)" }}
+      animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      transition={{ duration: 0.9, delay, ease: EASE }}
+    >
+      {word}
+    </motion.span>
+  );
+}
+
+export function Hero() {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "18%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+
+  return (
+    <section
+      ref={ref}
+      className="relative min-h-[100dvh] pt-20 flex flex-col md:flex-row items-center overflow-hidden"
+      style={{ background: "linear-gradient(160deg, #F7F3EC 0%, #EDE4D3 100%)" }}
+    >
+      {/* Floating decorative palm */}
+      <motion.div
+        animate={{ y: [0, -14, 0], rotate: [0, 3, -2, 0] }}
+        transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
+        className="absolute top-28 left-6 text-primary/15 pointer-events-none"
       >
-        <PalmTreeIcon className="w-24 h-24" />
-      </motion.div>
-      <motion.div 
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-        className="absolute bottom-32 right-1/2 text-primary/20"
-      >
-        <KathakaliIcon className="w-32 h-32 opacity-20" />
+        <PalmTreeIcon className="w-28 h-28" />
       </motion.div>
 
-      <div className="w-full md:w-1/2 px-6 md:pl-20 md:pr-10 py-16 md:py-0 flex flex-col justify-center z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
+      {/* Floating Kathakali */}
+      <motion.div
+        animate={{ y: [0, 12, 0], rotate: [0, -4, 3, 0] }}
+        transition={{ repeat: Infinity, duration: 11, ease: "easeInOut", delay: 2 }}
+        className="absolute bottom-36 left-1/3 text-primary/10 pointer-events-none"
+      >
+        <KathakaliIcon className="w-36 h-36" />
+      </motion.div>
+
+      {/* Floating leaf bottom-right */}
+      <motion.div
+        animate={{ y: [0, -10, 0], rotate: [20, 26, 18, 20] }}
+        transition={{ repeat: Infinity, duration: 9, ease: "easeInOut", delay: 1 }}
+        className="absolute bottom-20 right-8 text-primary/10 pointer-events-none hidden md:block"
+      >
+        <LeafIcon className="w-20 h-20" />
+      </motion.div>
+
+      {/* Left — text */}
+      <motion.div
+        style={{ y: textY, opacity }}
+        className="w-full md:w-1/2 px-6 md:pl-20 md:pr-10 py-16 md:py-0 flex flex-col justify-center z-10"
+      >
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
+          className="text-xs font-bold tracking-[0.25em] text-primary uppercase mb-5"
         >
-          <p className="text-sm font-semibold tracking-widest text-primary uppercase mb-4">
-            A home in the heart of Kochi
-          </p>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl text-foreground leading-[1.1] mb-6">
-            <span className="font-cormorant italic text-primary block mb-2">A peaceful</span>
-            <span className="font-serif font-bold">Kerala retreat</span>
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-lg leading-relaxed">
-            Surrounded by greenery, filled with warmth and close to everything that matters.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="rounded-full text-base px-8 h-14" data-testid="btn-hero-book">
-              Book Your Stay
-            </Button>
-            <Button size="lg" variant="outline" className="rounded-full text-base px-8 h-14 border-primary text-primary hover:bg-primary/5" data-testid="btn-hero-explore">
-              Explore The Villa
-            </Button>
-          </div>
-        </motion.div>
-      </div>
+          A home in the heart of Kochi
+        </motion.p>
 
-      <div className="w-full md:w-1/2 h-[60vh] md:h-screen relative p-4 md:p-8">
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="w-full h-full rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl relative"
+        <h1 className="leading-[1.05] mb-7">
+          <motion.span
+            className="font-cormorant italic text-primary block text-5xl md:text-6xl lg:text-7xl mb-1"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.25, ease: EASE }}
+          >
+            A peaceful
+          </motion.span>
+          <span className="font-serif font-bold text-foreground text-5xl md:text-6xl lg:text-7xl block overflow-hidden">
+            {["Kerala", "retreat"].map((w, i) => (
+              <AnimatedWord key={w} word={w + (i === 0 ? "\u00A0" : "")} delay={0.45 + i * 0.14} />
+            ))}
+          </span>
+          <motion.span
+            className="font-serif font-bold text-foreground text-4xl md:text-5xl lg:text-6xl block"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.75, ease: EASE }}
+          >
+            in the heart of Kochi
+          </motion.span>
+        </h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.9, ease: EASE }}
+          className="text-base md:text-lg text-foreground/70 mb-10 max-w-md leading-relaxed"
         >
-          <img 
-            src={heroImage} 
-            alt="Traditional Kerala villa surrounded by lush greenery" 
-            className="w-full h-full object-cover"
+          Surrounded by greenery, filled with warmth and close to everything that matters.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 1.05, ease: EASE }}
+          className="flex flex-col sm:flex-row gap-4"
+        >
+          <motion.a
+            href="#contact"
+            whileHover={{ scale: 1.04, boxShadow: "0 8px 32px rgba(94,122,77,0.35)" }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 20 }}
+            data-testid="btn-hero-book"
+            className="inline-flex items-center justify-center px-8 h-14 rounded-full text-base font-semibold text-primary-foreground cursor-pointer"
+            style={{ backgroundColor: "#5E7A4D" }}
+          >
+            Book Your Stay
+          </motion.a>
+          <motion.a
+            href="#gallery"
+            whileHover={{ scale: 1.04, backgroundColor: "rgba(94,122,77,0.06)" }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 20 }}
+            data-testid="btn-hero-explore"
+            className="inline-flex items-center justify-center px-8 h-14 rounded-full text-base font-semibold border-2 border-primary text-primary cursor-pointer"
+          >
+            Explore The Villa
+          </motion.a>
+        </motion.div>
+      </motion.div>
+
+      {/* Right — parallax image */}
+      <div className="w-full md:w-1/2 h-[60vh] md:h-screen relative p-4 md:p-8 overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92, y: 30 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1.4, delay: 0.3, ease: EASE }}
+          className="w-full h-full rounded-[2.5rem] overflow-hidden shadow-2xl relative"
+          style={{ willChange: "transform" }}
+        >
+          <motion.img
+            src={heroImage}
+            alt="Palm Grove Service Villa — a traditional Kerala home surrounded by lush greenery"
+            style={{ y: imageY }}
+            className="w-full h-[115%] object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
         </motion.div>
       </div>
     </section>

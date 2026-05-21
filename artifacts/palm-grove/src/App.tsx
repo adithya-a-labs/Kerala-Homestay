@@ -15,23 +15,62 @@ import { HostSection } from "@/components/sections/HostSection";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/sections/Footer";
+import { FloatingLeaves } from "@/components/ui/floating-leaves";
+import { WaveDivider, CurvedDivider } from "@/components/ui/wave-divider";
+import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 const queryClient = new QueryClient();
 
 function Home() {
+  useSmoothScroll();
+
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden">
+    <div className="min-h-screen bg-background overflow-x-hidden relative">
+      <FloatingLeaves />
       <Navbar />
+
+      {/* Hero */}
       <Hero />
-      <TrustBar />
+
+      {/* Trust Bar floats above wave */}
+      <div className="relative z-10">
+        <TrustBar />
+      </div>
+
+      {/* Welcome */}
+      <WaveDivider fillColor="#F7F3EC" className="mt-6" />
       <WelcomeSection />
+
+      {/* Why Guests Love — sand bg */}
+      <CurvedDivider fillColor="#EDE4D3" />
       <WhyGuestsLove />
+
+      {/* Gallery — back to cream */}
+      <CurvedDivider fillColor="#F7F3EC" />
       <Gallery />
+
+      {/* Explore Kochi — beige bg */}
+      <WaveDivider fillColor="#E8DCC2" />
       <ExploreKochi />
+
+      {/* Book Your Stay — cream */}
+      <WaveDivider fillColor="#F7F3EC" />
       <BookYourStay />
+
+      {/* Host — sand bg */}
+      <CurvedDivider fillColor="#EDE4D3" />
       <HostSection />
+
+      {/* Testimonials — cream */}
+      <CurvedDivider fillColor="#F7F3EC" />
       <Testimonials />
+
+      {/* Contact — sand bg */}
+      <WaveDivider fillColor="#EDE4D3" />
       <ContactSection />
+
+      {/* Footer */}
+      <CurvedDivider fillColor="#3E6B4F" />
       <Footer />
     </div>
   );
