@@ -1,0 +1,546 @@
+Build a warm, artsy, tropical Kerala homestay website for “Palm Grove Service Villa” located in Edappally, Kochi, India.
+
+IMPORTANT:
+The design aesthetic should closely match the uploaded reference image.
+
+The website should feel:
+- warm
+- welcoming
+- handcrafted
+- artistic
+- tropical
+- human
+- peaceful
+- nature-filled
+- culturally rooted in Kerala
+
+NOT:
+- corporate
+- luxury business hotel
+- overly polished resort
+- dark cinematic premium UI
+- startup-like
+- rigid or formal
+
+The emotional feeling should be:
+“Come stay with us and feel at home.”
+
+The villa should feel like:
+- a beautiful Kerala family home
+- a peaceful tropical retreat
+- an authentic homestay
+- warm Kerala hospitality
+- a cozy stay surrounded by greenery
+
+==================================================
+REFERENCE IMAGE STYLE
+==================================================
+
+Use the uploaded image as the PRIMARY design inspiration.
+
+Match:
+- overall warmth
+- layout spacing
+- typography softness
+- earthy colors
+- illustrated Kerala elements
+- hand-crafted feeling
+- organic section flow
+- cozy hospitality vibe
+- playful tropical decorations
+
+The website should look:
+- breathable
+- artistic
+- nature-inspired
+- emotionally warm
+- soft and welcoming
+
+==================================================
+TECH STACK
+==================================================
+
+Use:
+- Next.js
+- Tailwind CSS
+- Framer Motion
+- Lucide icons
+- Responsive mobile-first design
+
+Optimize for:
+- smooth scrolling
+- elegant animations
+- clean code structure
+- image optimization
+- beautiful mobile experience
+
+==================================================
+VISUAL STYLE
+==================================================
+
+The visual direction should feel like:
+- a boutique Kerala homestay
+- tropical eco retreat
+- handcrafted travel journal
+- Kerala heritage home
+- peaceful garden villa
+
+Use:
+- soft rounded corners
+- warm sunlight tones
+- tropical greenery
+- cozy layouts
+- organic spacing
+- hand-drawn elements
+- nature-inspired decorations
+
+DO NOT:
+- use harsh shadows
+- use dark luxury themes
+- use overly dramatic cinematic overlays
+- make the UI too formal
+- make it feel like a premium chain hotel
+
+==================================================
+COLOR PALETTE
+==================================================
+
+Use soft earthy tropical colors.
+
+Primary Green:
+#5E7A4D
+
+Soft Tropical Green:
+#7FA574
+
+Warm Cream:
+#F7F3EC
+
+Soft Beige:
+#E8DCC2
+
+Muted Sand:
+#D9C29B
+
+Earth Brown:
+#8B5E34
+
+Backgrounds should feel:
+- warm
+- airy
+- natural
+- sunlit
+
+==================================================
+TYPOGRAPHY
+==================================================
+
+Typography should feel:
+- friendly
+- elegant
+- relaxed
+- handcrafted
+- welcoming
+
+Use:
+Headings:
+- Playfair Display
+OR
+- Cormorant Garamond
+
+Body:
+- Inter
+- Manrope
+OR
+- Lato
+
+Add:
+- handwritten accent fonts sparingly
+- friendly typography hierarchy
+- soft spacing
+
+The text should feel human and personal.
+
+==================================================
+KERALA ARTISTIC ELEMENTS
+==================================================
+
+VERY IMPORTANT:
+Use Kerala-inspired illustrations and decorative elements throughout the website.
+
+Include:
+- hand-drawn coconut trees
+- Kerala houseboat sketches
+- Kathakali line-art
+- tropical leaf doodles
+- mural-inspired patterns
+- heritage home illustrations
+- palm leaves
+- subtle artistic dividers
+
+The illustrations should feel:
+- hand-crafted
+- minimal
+- elegant
+- playful
+- warm
+
+DO NOT:
+- use loud touristy graphics
+- use tacky clipart
+- overload the design
+
+Use illustrations as:
+- corner decorations
+- section accents
+- footer artwork
+- soft background elements
+- tropical framing
+
+==================================================
+WEBSITE STRUCTURE
+==================================================
+
+==================================================
+SECTION 1 — HERO
+==================================================
+
+Create a bright welcoming hero section.
+
+Layout:
+- split composition like the reference image
+- left side text
+- right side large villa image
+
+Use:
+- warm sunlight villa image
+- tropical greenery
+- soft cream overlay
+- organic curved section transitions
+- floating tropical illustrations
+
+Hero Text:
+
+Small top text:
+“A home in the heart of Kochi”
+
+Main Heading:
+“A peaceful Kerala retreat in the heart of Kochi”
+
+Subheading:
+“Surrounded by greenery, filled with warmth and close to everything that matters.”
+
+Buttons:
+- Book Your Stay
+- Explore The Villa
+
+Add:
+- floating palm illustrations
+- Kerala doodles
+- warm atmosphere
+- gentle animations
+
+Navbar:
+- soft transparent background
+- rounded buttons
+- friendly minimal style
+
+Navbar Items:
+- Home
+- Rooms
+- Gallery
+- Experiences
+- Explore Kochi
+- Contact
+
+Top Right:
+- WhatsApp button
+- mobile menu icon
+
+==================================================
+SECTION 2 — TRUST BAR
+==================================================
+
+Create a soft floating info card below the hero.
+
+Display:
+⭐ 8.3 Guest Rating
+📍 Edappally, Kochi
+🚇 600m from Metro
+🛍️ 500m from Lulu Mall
+🧘 Morning Yoga Sessions
+
+Style:
+- rounded card
+- soft shadow
+- warm cream background
+- minimal icons
+
+==================================================
+SECTION 3 — WELCOME SECTION
+==================================================
+
+Two-column layout.
+
+LEFT:
+Warm welcome text.
+
+RIGHT:
+3 cozy image cards.
+
+Heading:
+“Welcome to Palm Grove Service Villa”
+
+Text:
+“We are a family-run villa offering a peaceful and comfortable stay surrounded by lush tropical greenery. Just minutes from the city’s best attractions, yet tucked away in a calm and relaxing environment.”
+
+Bottom handwritten-style text:
+“Come, stay with us and feel at home.”
+
+Add:
+- leaf doodles
+- warm illustrations
+- tropical corner decorations
+
+==================================================
+SECTION 4 — WHY GUESTS LOVE STAYING HERE
+==================================================
+
+Create soft illustrated icon cards.
+
+Items:
+- Tropical Garden Living
+- Morning Yoga
+- Kerala Charm
+- Family Friendly
+- Prime Location
+- Home Comforts
+
+Cards should feel:
+- playful
+- warm
+- artsy
+- breathable
+- minimal
+
+==================================================
+SECTION 5 — GALLERY
+==================================================
+
+Heading:
+“A glimpse of our home”
+
+Use:
+- cozy gallery cards
+- rounded corners
+- warm lighting
+- tropical atmosphere
+- nature-heavy imagery
+
+Gallery should focus on:
+- pathways
+- greenery
+- wooden architecture
+- cozy interiors
+- outdoor seating
+- tropical evenings
+
+Add:
+- hover zoom effects
+- soft transitions
+- warm image tones
+
+==================================================
+SECTION 6 — EXPLORE KOCHI
+==================================================
+
+Soft card section with Kerala-inspired illustrations.
+
+Include:
+- Lulu Mall
+- Edappally Metro
+- Fort Kochi
+- Kerala Museum
+- Cochin International Airport
+
+Add:
+- tropical doodles
+- houseboat illustrations
+- Kerala heritage sketch art
+
+This section should feel:
+fun,
+friendly,
+and local.
+
+==================================================
+SECTION 7 — BOOK YOUR STAY
+==================================================
+
+Create soft rounded booking cards.
+
+Include buttons for:
+- Booking.com
+- MakeMyTrip
+- Agoda
+- Airbnb
+- Goibibo
+
+Also include:
+- WhatsApp Inquiry
+- Call Now
+
+Style:
+- soft shadows
+- rounded buttons
+- spacious layout
+- friendly hospitality feel
+
+Prioritize WhatsApp visually.
+
+==================================================
+SECTION 8 — HOST SECTION
+==================================================
+
+Heading:
+“Hosted by Francis Xavier”
+
+Use:
+- circular host image
+- handwritten signature
+- personal welcome note
+
+Text should feel:
+human,
+friendly,
+and heartfelt.
+
+Mention:
+- yoga sessions
+- local tips
+- warm Kerala hospitality
+
+==================================================
+SECTION 9 — TESTIMONIALS
+==================================================
+
+Heading:
+“What Our Guests Say”
+
+Use:
+- warm testimonial cards
+- soft shadows
+- friendly layouts
+- handwritten accent elements
+
+Focus reviews on:
+- greenery
+- peacefulness
+- location
+- family atmosphere
+- warmth
+
+==================================================
+SECTION 10 — CONTACT SECTION
+==================================================
+
+Split layout:
+LEFT:
+contact details
+
+RIGHT:
+friendly inquiry form
+
+Include:
+- map
+- WhatsApp
+- phone
+- email
+- address
+
+Add:
+- tropical illustrations
+- Kerala doodles
+- cozy footer atmosphere
+
+==================================================
+FOOTER
+==================================================
+
+Warm earthy footer.
+
+Use:
+- soft green background
+- hand-drawn Kerala house illustration
+- coconut trees
+- small tropical doodles
+- warm typography
+
+Footer should feel:
+personal,
+friendly,
+and welcoming.
+
+Add text:
+“We can’t wait to welcome you.”
+
+==================================================
+ANIMATIONS
+==================================================
+
+Animations should feel:
+- soft
+- gentle
+- organic
+- calming
+
+Use:
+- floating leaves
+- subtle fade-ins
+- smooth hover effects
+- soft scrolling transitions
+
+DO NOT:
+- use flashy animations
+- use aggressive parallax
+- overdo motion
+
+==================================================
+RESPONSIVENESS
+==================================================
+
+The mobile experience should feel:
+- cozy
+- app-like
+- immersive
+- clean
+- easy to navigate
+
+Optimize:
+- image stacking
+- rounded layouts
+- typography scaling
+- touch-friendly spacing
+
+==================================================
+FINAL EXPERIENCE GOAL
+==================================================
+
+The final website should feel like:
+a warm Kerala home opened lovingly to travelers.
+
+Visitors should emotionally feel:
+- welcomed
+- peaceful
+- relaxed
+- emotionally connected
+- curious
+- comfortable
+
+The final vibe should be:
+friendly,
+artsy,
+tropical,
+human,
+warm,
+and deeply Kerala-inspired.

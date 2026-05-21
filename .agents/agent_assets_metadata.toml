@@ -1,0 +1,68 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "-oJgLPmWaiY8NhaPzlqdv"
+uri = "file://artifacts/palm-grove/src/assets/hero.png"
+type = "image"
+title = "Kerala villa hero image"
+
+[[generated]]
+id = "zreSadGAZ9jIiDEaPAiRR"
+uri = "file://artifacts/palm-grove/src/assets/welcome-1.png"
+type = "image"
+title = "Tropical garden pathway"
+
+[[generated]]
+id = "VANZ4POCby9TjUSh0KkWz"
+uri = "file://artifacts/palm-grove/src/assets/welcome-2.png"
+type = "image"
+title = "Kerala wooden dining area"
+
+[[generated]]
+id = "nLqgQdPJ6Bm7q5z6YVebw"
+uri = "file://artifacts/palm-grove/src/assets/welcome-3.png"
+type = "image"
+title = "Cozy bedroom earthy tones"
+
+[[generated]]
+id = "5JyhdxcWvyhSC6l27vz0X"
+uri = "file://artifacts/palm-grove/src/assets/gallery-1.png"
+type = "image"
+title = "Garden stone pathway"
+
+[[generated]]
+id = "ovm_6zU5ZgIhzWvyb6yX4"
+uri = "file://artifacts/palm-grove/src/assets/gallery-2.png"
+type = "image"
+title = "Shaded outdoor seating"
+
+[[generated]]
+id = "IYXXNiiVvwGO6XxyXaTyn"
+uri = "file://artifacts/palm-grove/src/assets/gallery-3.png"
+type = "image"
+title = "Lush green corridor"
+
+[[generated]]
+id = "Pud_S1DE4VyQYxQicxhTE"
+uri = "file://artifacts/palm-grove/src/assets/gallery-4.png"
+type = "image"
+title = "Warm interior sitting room"
+
+[[generated]]
+id = "1nZYRCM-U7Y_vHfcrr1Gd"
+uri = "file://artifacts/palm-grove/src/assets/gallery-5.png"
+type = "image"
+title = "Evening garden string lights"
+
+[[generated]]
+id = "lD39qOaeaGvQzRiDWQkhm"
+uri = "file://artifacts/palm-grove/src/assets/houseboat.png"
+type = "image"
+title = "Kerala houseboat backwaters"
+
+[[generated]]
+id = "fA5xzjYKFg2pUQqAfx8i2"
+uri = "file://artifacts/palm-grove/src/assets/host.png"
+type = "image"
+title = "Middle-aged Indian host"

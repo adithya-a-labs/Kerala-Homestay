@@ -1,36 +1,45 @@
-# [Project name]
+# Palm Grove Service Villa
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A warm, artsy tropical Kerala homestay website for "Palm Grove Service Villa" located in Edappally, Kochi, India.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/palm-grove run dev` — run the website (port 22198)
+- `pnpm --filter @workspace/api-server run dev` — run the API server (port 8080)
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
 
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
+- Frontend: React + Vite, Tailwind CSS v4, Framer Motion
+- Fonts: Playfair Display, Cormorant Garamond, Inter (Google Fonts)
+- Icons: Lucide React, React Icons
 - API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- DB: PostgreSQL + Drizzle ORM (not yet used by the frontend)
+- Build: Vite (frontend), esbuild (API)
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/palm-grove/` — the Kerala homestay website
+- `artifacts/palm-grove/src/components/sections/` — all page sections (Navbar, Hero, TrustBar, WelcomeSection, WhyGuestsLove, Gallery, ExploreKochi, BookYourStay, HostSection, Testimonials, ContactSection, Footer)
+- `artifacts/palm-grove/src/components/ui/icons.tsx` — hand-drawn SVG illustrations (PalmTreeIcon, LeafIcon, HouseboatIcon, LotusIcon, KathakaliIcon)
+- `artifacts/palm-grove/src/assets/` — generated images (hero, gallery 1-5, welcome 1-3, host, houseboat)
+- `artifacts/palm-grove/src/index.css` — warm Kerala color palette + Google Fonts import
+- `artifacts/api-server/` — Express API server
+- `lib/api-spec/openapi.yaml` — API spec source of truth
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Presentation-first website: no backend API calls needed; all content is static
+- Color palette derived directly from Kerala earth tones (#F7F3EC cream, #5E7A4D primary green, #8B5E34 earth brown)
+- Cormorant Garamond italic used for signature/handwritten-feel text
+- SVG illustrations are inline components for hand-crafted artistic accents
+- Framer Motion whileInView for gentle fade-in-up section animations
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+A single-page Kerala homestay website featuring: hero with villa photography, trust bar, welcome section, feature cards (Why Guests Love Staying Here), photo gallery, Explore Kochi nearby places, booking platform links, host profile (Francis Xavier), testimonials, contact form, and footer with Kerala house illustration.
 
 ## User preferences
 
@@ -38,7 +47,10 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Google Fonts @import must be the very first line in index.css (before @import "tailwindcss")
+- CSS custom properties use space-separated HSL values (no hsl() wrapper)
+- The .font-cormorant utility class is defined in index.css for Cormorant Garamond
+- @assets/ alias in vite.config.ts points to attached_assets/ at workspace root
 
 ## Pointers
 
