@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { PalmTreeIcon, KathakaliIcon } from "@/components/ui/icons";
-import heroImage from "@/assets/hero.png";
+import heroImage from "@assets/829763380_1779350392783.jpg";
 
 export function Hero() {
   return (
