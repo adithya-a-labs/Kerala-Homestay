@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Star, MapPin, Train, ShoppingBag } from "lucide-react";
 import { LotusIcon } from "@/components/ui/icons";
 
-const EASE = [0.25, 0.46, 0.45, 0.94];
+const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 const items = [
   { icon: <Star className="w-5 h-5 text-amber-400 fill-amber-400" />, label: "Guest Rating", value: "8.3" },

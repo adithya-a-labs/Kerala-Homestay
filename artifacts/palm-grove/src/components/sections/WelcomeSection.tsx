@@ -4,7 +4,7 @@ import welcome2 from "@/assets/welcome-2.png";
 import welcome3 from "@/assets/welcome-3.png";
 import { LeafIcon } from "@/components/ui/icons";
 
-const EASE = [0.25, 0.46, 0.45, 0.94];
+const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 36, filter: "blur(3px)" },

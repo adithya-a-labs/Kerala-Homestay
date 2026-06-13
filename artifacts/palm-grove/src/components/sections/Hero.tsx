@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { PalmTreeIcon, KathakaliIcon, LeafIcon } from "@/components/ui/icons";
 import heroImage from "@assets/829763380_1779350392783.jpg";
 
-const EASE = [0.25, 0.46, 0.45, 0.94];
+const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 function AnimatedWord({ word, delay }: { word: string; delay: number }) {
   return (

@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { SiBookingdotcom, SiAirbnb } from "react-icons/si";
 
-const EASE = [0.25, 0.46, 0.45, 0.94];
+const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 const platforms = [
   { name: "Booking.com", icon: <SiBookingdotcom className="w-5 h-5" />, color: "#003580" },

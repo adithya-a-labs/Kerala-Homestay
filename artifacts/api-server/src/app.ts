@@ -6,6 +6,10 @@ import { logger } from "./lib/logger";
 
 const app: Express = express();
 
+const corsOrigins = process.env["CORS_ORIGINS"]?.split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
 app.use(
   pinoHttp({
     logger,
@@ -25,9 +29,18 @@ app.use(
     },
   }),
 );
-app.use(cors());
+app.use(
+  cors({
+    origin: corsOrigins?.length ? corsOrigins : true,
+    credentials: true,
+  }),
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.get("/health", (_req, res) => {
+  res.json({ status: "ok" });
+});
 
 app.use("/api", router);
 

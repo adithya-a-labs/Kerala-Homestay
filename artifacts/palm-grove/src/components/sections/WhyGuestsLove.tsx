@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Leaf, Sunrise, Home, Users, MapPin, Coffee } from "lucide-react";
 import { LeafIcon } from "@/components/ui/icons";
 
-const EASE = [0.25, 0.46, 0.45, 0.94];
+const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 const features = [
   { icon: <Leaf className="w-7 h-7" />,   title: "Tropical Garden Living", desc: "Surrounded by lush greenery and fresh air" },

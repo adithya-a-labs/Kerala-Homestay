@@ -3,7 +3,7 @@ import { ShoppingBag, Train, Landmark, BookOpen, Plane, ChevronRight } from "luc
 import { PalmTreeIcon, HouseboatIcon } from "@/components/ui/icons";
 import houseboat from "@/assets/houseboat.png";
 
-const EASE = [0.25, 0.46, 0.45, 0.94];
+const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 const places = [
   { icon: <ShoppingBag className="w-5 h-5 text-primary" />, name: "Lulu Mall",                    distance: "500 m" },

@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { LeafIcon } from "@/components/ui/icons";
 import { useState } from "react";
 
-const EASE = [0.25, 0.46, 0.45, 0.94];
+const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 const contactItems = [
   { icon: <MapPin className="w-5 h-5 text-primary" />,  label: "Address", value: "Edappally, Kochi, Kerala – 682024\n600m from Edappally Metro" },

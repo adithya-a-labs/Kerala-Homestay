@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Star, ChevronRight } from "lucide-react";
 import { LeafIcon } from "@/components/ui/icons";
 
-const EASE = [0.25, 0.46, 0.45, 0.94];
+const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 
 const reviews = [
   { text: "Excellent location! Very close to Lulu Mall and Metro. The garden is beautiful and peaceful.",      author: "Neha",  country: "India" },
